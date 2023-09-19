@@ -2,6 +2,12 @@
   "name": "bunapi",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist && echo 'Done.'",
+    "dev": "bun --hot run index.ts  ",
+    "start": "bun run index.ts",
+    "test": "bun test --watch"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
